@@ -8,5 +8,12 @@
  */
 
 return array(
-    '/' => 'home/index'
+    '/' => array(
+        'method' => 'GET',
+        'route' => 'home/index'
+        ),
+    '/user' => 'views/user',
+    '/user/:id' => array(
+        'view' => 'profile'
+    )
 );
