@@ -12,8 +12,16 @@
  * Descripción de UserController
  */
 class UserController {
+    
+    public function __construct() {
+        
+    }
 
-    public function indexAction($request, $response) {
+    public function indexAction(/*$request, $response*/) {
+        echo "Message from " . __FILE__;
+    }
+    
+    public function __destruct() {
         
     }
 
